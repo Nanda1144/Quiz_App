@@ -1,0 +1,17 @@
+#leaderboard {
+  background-color: #f0f8ff;
+  margin-top: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#leaderboard h3 {
+  margin-top: 0;
+  color: #3949ab;
+}
+#leaderboard ol {
+  padding-left: 1.2em;
+}
+#leaderboard li {
+  margin: 0.3em 0;
+}

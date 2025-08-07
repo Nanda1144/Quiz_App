@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="leaderboard.css">
+  <script defer src="quiz.js"></script>
+  <script defer src="leaderboard.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 id="quiz-header">Python Quiz</h1>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><button onclick="changeUser()">Change User</button></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <div id="difficulty-selection">
+      <h2>Select Difficulty</h2>
+      <button onclick="startQuiz('basic')">Basic</button>
+      <button onclick="startQuiz('intermediate')">Intermediate</button>
+      <button onclick="startQuiz('advanced')">Advanced</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-box" style="display:none;"></div>
+    <div id="leaderboard" style="display:none;"></div>
+  </main>
+</body>
+</html>
