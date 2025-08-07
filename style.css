@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3fc;
+  margin: 0px;
+  padding : 0px;
+}
+
+header {
+  background: #3949ab;
+  color: #fff;
+  padding: 1.2em;
+  text-align: center;
+  margin-bottom: 2em;
+  dispaly: flex;
+  width: 100%;
+}
+
+main {
+  dispaly: none;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(51,51,51,0.07);
+}
+
+h2{
+  padding:0px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+  justify-content: center;
+  color: white;
+}
+
+#categories-section{
+  display: flex;
+}
+
+button {
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.3em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-items: center;
+}
+
+button:hover {
+  background: #222f5b;
+}
+
+.quiz-container {
+  margin-top: 2em;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.options button {
+  display: block;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.result {
+  margin-top: 1.5em;
+  font-size: 1.15em;
+}
+
+.score {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+  color:#fff;
+}
+
+nav#menu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  background-color: #4c5bd4;
+}
+
+nav#menu.show {
+  max-height: 500px; /* enough height for all items */
+}
+
+
+nav#menu ul {
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav#menu li {
+  margin: 0.5em 0;
+}
+
+nav#menu a, nav#menu button {
+  color: white;
+  
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1em;
+  text-align:left;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive - optional */
+@media (min-width: 500px) {
+  .hamburger {
+    font-size: 26px;
+  }
+  nav#menu {
+    display: flex ;
+  }
+
+.selected {
+    color: white ;  /* Text becomes white */
+    
+}
+}
+p{
+  color: black;
+}
+div.body{
+  padding-left: 20px;
+}
